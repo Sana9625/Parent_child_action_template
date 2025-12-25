@@ -1,0 +1,9 @@
+# .github/actions/maven-build/action.yml
+name: Maven Build
+description: Build Java project
+
+runs:
+  using: composite
+  steps:
+    - run: mvn clean install
+      shell: bash
